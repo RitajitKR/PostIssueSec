@@ -1,0 +1,65 @@
+		.rounded{
+			border-radius: 10px;
+		}
+		
+		.hovereffect {
+		width:100%;
+		height:100%;
+		float:left;
+		overflow:hidden;
+		position:relative;
+		text-align:center;
+		cursor:default;
+		}
+
+		.hovereffect .overlay {
+		width:100%;
+		height:100%;
+		position:absolute;
+		overflow:hidden;
+		top:0;
+		left:0;
+		opacity:0;
+		background-color:rgba(0,0,0,0.5);
+		-webkit-transition:all .4s ease-in-out;
+		transition:all .4s ease-in-out
+		}
+
+		.hovereffect img {
+		display:block;
+		position:relative;
+		width: 150px;height: 100px;
+		margin: 2px;
+		-webkit-transition:all .4s linear;
+		transition:all .4s linear;
+		}
+
+		.hovereffect:hover img {
+		-ms-transform:scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
+		}
+
+		.hovereffect:hover .overlay {
+		opacity:1;
+		color: white;
+		filter:alpha(opacity=100);
+		}
+		.pointer-div{
+			/*background-image:url('tnj1.png');*/
+			background-color: green;
+			width:600px;height:400px;
+			border-style: solid; 
+			border-width: 5px;
+		}
+		.pointer-click {
+			    
+			    animation-name: example;
+			    animation-duration: 1s;
+			}
+			/* Standard syntax */
+			@keyframes example {
+			    from {border-color: blue;}
+			    to {border-color: black;}
+			}
+	
